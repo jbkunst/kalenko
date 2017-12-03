@@ -415,19 +415,22 @@
 					<section class="banner style2 orient-center content-align-center image-position-center full onscroll-image-fade-in" id= "6">
 						<div class="content">
 							<center><img src="images/logo.jpg" alt="" class="img-circle"></center>
-							<form method="post" action="#">
+							<form action="https://formspree.io/contacto@kalenko.cl" method="POST">
 								<div class="field half first">
 									<label for="name">Nombre</label>
 									<input type="text" name="name" id="name" value="" />
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="email" name="email" id="email" value="" />
+									<input type="email" name="_replyto" id="email" value="" />
 								</div>
 								<div class="field">
 									<label for="message">Mensaje</label>
-									<textarea name="message" id="message" rows="6"></textarea>
+									<textarea name="content" required="required" id="message" rows="6"></textarea>
 								</div>
+								<input type="hidden" name="_subject" value="Nuevo mensaje kalenko.cl" />
+								<input type="hidden" name="_format" value="plain" />
+								<input type="hidden" name="_language" value="es" />
 								<ul class="actions">
 									<li><input type="submit" name="submit" id="submit" value="Enviar Mensaje" /></li>
 								</ul>
